@@ -1,5 +1,51 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+body {
+    background-color: green;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.card {
     background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 24px;
+}
+/*Clase CSS para cada palo*/
+.heart, .diamond {
+    color:red;
+}
+.spade, .club {
+    color:black;
+}
+.valor {
+    font-size: 90px;
+    font-weight: bold;
+}
+.top {
+    align-self: flex-start;
+}
+.bottom {
+    align-self: flex-end;
+    transform: rotate(180deg);
+}
+
+/*Agrega un botón que genere una nueva carta*/
+.card-button {
+    width: 200px;
+    height: 80px;
+    border-radius: 18px;
+    outline: none;
+    margin: 50px;
+    background-color: red;
+    color: white;
 }
